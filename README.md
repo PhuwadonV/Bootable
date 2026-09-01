@@ -3,7 +3,7 @@
 ### Windows
 
 1. Install [MSYS2](https://www.msys2.org/).
-2. Configure `install.sh` to open with `C:\msys64\ucrt64.exe`.
+2. Configure `Bootable\install.sh` to open with `C:\msys64\ucrt64.exe`.
 3. Double-click `Bootable\install.sh`.
 
 ## Build and Run
