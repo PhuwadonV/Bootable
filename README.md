@@ -23,12 +23,12 @@
 1. Prepare an unused USB flash drive.
 2. Install [HxD](https://mh-nexus.de/en/hxd/).
 3. Run HxD as an administrator.
-4. In the menu bar, change **Bytes per row** to `8`.
-5. Select **Tools → Open disk** from the menu bar.
-6. Select **Physical disks → Removable disk** (your unused USB flash drive).
-7. Uncheck **Open as Readonly**.
-8. Click **OK**.
-9. Click **OK** to accept the warning.
+4. Select **Tools → Open disk** from the menu bar.
+5. Select **Physical disks → Removable disk** (your unused USB flash drive).
+6. Uncheck **Open as Readonly**.
+7. Click **OK**.
+8. Click **OK** to accept the warning.
+9. In the menu bar, change **Bytes per row** to `8` (the default is 16).
 10. Open `Bootable\MBR\out\MBR.raw`.
 11. Select all bytes from offset `0` to the last byte.
 12. Copy the selected bytes from `MBR.raw`.
