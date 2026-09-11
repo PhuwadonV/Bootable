@@ -18,4 +18,4 @@ OnError()
 
 mkdir -p out || OnError
 
-nasm src/main.asm -f bin -o out/MBR.raw || OnError
+nasm -f bin -Werror src/main.asm -o out/MBR.raw || OnError

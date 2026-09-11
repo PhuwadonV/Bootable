@@ -18,4 +18,4 @@ OnError()
 
 mkdir -p out/efi/boot || OnError
 
-nasm src/main.asm -i src -f bin -o out/efi/boot/bootx64.efi || OnError
+nasm -i src -f bin -Werror src/main.asm -o out/efi/boot/bootx64.efi || OnError
