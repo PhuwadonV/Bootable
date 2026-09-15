@@ -10,11 +10,14 @@ OnError()
 {
     case "$OS_ID_LIKE" in
         'cygwin arch')
+            EXIT_STATUS=$?
             printf '\nPress any key to continue\n'
             read -rs -n 1
-            exit $? ;;
+            exit $EXIT_STATUS ;;
     esac
 }
+
+command -V nasm || OnError
 
 mkdir -p out/efi/boot || OnError
 

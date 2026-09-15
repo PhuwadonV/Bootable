@@ -10,12 +10,15 @@ OnError()
 {
     case "$OS_ID_LIKE" in
         'cygwin arch')
+            EXIT_STATUS=$?
             printf '\nPress any key to continue\n'
             read -rs -n 1
-            exit $? ;;
+            exit $EXIT_STATUS ;;
     esac
 }
 
-[ ! -f out/MBR.raw ] && sh build.sh
+command -V qemu-system-x86_64 || OnError
+
+[ ! -f out/MBR.raw ] && (sh build.sh || exit $?)
 
 qemu-system-x86_64 -drive format=raw,file=out/MBR.raw || OnError

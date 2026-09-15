@@ -8,9 +8,9 @@ OS_ID_LIKE="$ID_LIKE"
 
 case "$OS_ID_LIKE" in
     'cygwin arch')
-        pacman -Syu --needed --noconfirm nasm mingw-w64-ucrt-x86_64-qemu unzip
+        pacman -Syu --needed --noconfirm nasm mingw-w64-ucrt-x86_64-qemu unzip wget
         printf '\nPress any key to continue\n'
         read -rs -n 1 ;;
     'arch')
-        sudo pacman -Syu --needed --noconfirm nasm qemu unzip ;;
+        sudo pacman -Syu --needed --noconfirm nasm qemu unzip wget ;;
 esac
