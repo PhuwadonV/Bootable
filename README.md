@@ -4,8 +4,9 @@
 
 1. Install [MSYS2](https://www.msys2.org/).
 2. Configure `Bootable\install.sh` to open with `C:\msys64\ucrt64.exe`.
-3. Double-click `Bootable\install.sh`.
-4. Double-click `Bootable\install.sh` again.
+3. Turn off `Smart App Control` (Windows 11)
+4. Double-click `Bootable\install.sh`.
+5. Double-click `Bootable\install.sh` again.
 
 ## Build and Run
 
