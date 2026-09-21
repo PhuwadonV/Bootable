@@ -31,9 +31,9 @@
 7. Click **OK**.
 8. Click **OK** to accept the warning.
 9. In the menu bar, change **Bytes per row** to `8` (the default is 16).
-10. Open `Bootable\MBR\out\MBR.raw`.
+10. Open `Bootable\MBR\out\MBR.img`.
 11. Select all bytes from offset `0` to the last byte.
-12. Copy the selected bytes from `MBR.raw`.
+12. Copy the selected bytes from `MBR.img`.
 13. Switch to the removable disk tab.
 14. Select the same offset and range.
 15. Right-click and select **Paste Write**.

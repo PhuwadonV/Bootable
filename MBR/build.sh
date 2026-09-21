@@ -21,4 +21,4 @@ command -V nasm || OnError
 
 mkdir -p out || OnError
 
-nasm -f bin -Werror src/main.asm -o out/MBR.raw || OnError
+nasm -f bin -Werror src/main.asm -o out/MBR.img || OnError

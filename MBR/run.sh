@@ -19,6 +19,6 @@ OnError()
 
 command -V qemu-system-x86_64 || OnError
 
-[ ! -f out/MBR.raw ] && (sh build.sh || exit $?)
+[ ! -f out/MBR.img ] && (sh build.sh || exit $?)
 
-qemu-system-x86_64 -drive format=raw,file=out/MBR.raw || OnError
+qemu-system-x86_64 -drive format=raw,file=out/MBR.img || OnError
