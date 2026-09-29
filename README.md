@@ -20,7 +20,7 @@
 
 ### Windows
 
-#### MBR
+#### MBR (Option 1)
 
 1. Prepare an unused USB flash drive.
 2. Install [HxD](https://mh-nexus.de/en/hxd/).
@@ -48,6 +48,9 @@
 2. Right-click and select **Fill selection**, then fill every byte with `00`.
 3. Save the disk.
 4. Use Windows Explorer to format the USB flash drive.
+
+#### MBR (Option 2)
+1. Use [Rufus](https://rufus.ie/en/).
 
 #### UEFI
 
